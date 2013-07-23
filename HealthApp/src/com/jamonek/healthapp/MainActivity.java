@@ -1,25 +1,24 @@
 package com.jamonek.healthapp;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
-
+import android.widget.*;
 public class MainActivity extends FragmentActivity implements
 		ActionBar.OnNavigationListener {
-
+	PersonLogin person = new PersonLogin();
 	/**
 	 * The serialization (saved instance state) Bundle key representing the
 	 * current dropdown position.
 	 */
 	private static final String STATE_SELECTED_NAVIGATION_ITEM = "selected_navigation_item";
+	public final static String TYPE_EXTRA="apt.tutorial._ID";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,37 @@ public class MainActivity extends FragmentActivity implements
 								getString(R.string.title_section1),
 								getString(R.string.title_section2),
 								getString(R.string.title_section3), }), this);
+		Button button1 = (Button)findViewById(R.id.twitter);
+		button1.setOnClickListener(onTwitter);
+		Button button2 = (Button)findViewById(R.id.facebook);
+		button2.setOnClickListener(onFacebook);
+		Button button3 = (Button)findViewById(R.id.account);
+		button3.setOnClickListener(onAccount);
 	}
+	private View.OnClickListener onTwitter=new View.OnClickListener() {
+		public void onClick(View v) {
+			person.setType("Twitter");
+			Intent i = new Intent(MainActivity.this, LoginForm.class);
+			i.putExtra(TYPE_EXTRA, person.getType());
+			startActivity(i);	
+		}
+	};
+	private View.OnClickListener onFacebook=new View.OnClickListener() {
+		public void onClick(View v) {
+			person.setType("Facebook");
+			Intent i = new Intent(MainActivity.this, LoginForm.class);
+			i.putExtra(TYPE_EXTRA, person.getType());
+			startActivity(i);
+		}
+	};
+	private View.OnClickListener onAccount=new View.OnClickListener() {
+		public void onClick(View v) {
+			person.setType("Account");
+			Intent i = new Intent(MainActivity.this, LoginForm.class);
+			i.putExtra(TYPE_EXTRA, person.getType());
+			startActivity(i);
+		}
+	};
 
 	@Override
 	public void onRestoreInstanceState(Bundle savedInstanceState) {

@@ -10,4 +10,8 @@
 	<string name="login_twitter">Login to Twitter</string>
 	<string name="login_facebook">Login to Facebook</string>
 	<string name="create_account">Create An Account</string>
+	<string name="name">Name</string>
+	<string name="password">Password</string>
+	<string name="username">Username</string>
+	<string name="login">Login</string>
 </resources>
