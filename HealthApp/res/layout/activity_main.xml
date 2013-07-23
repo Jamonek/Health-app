@@ -19,16 +19,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
-        android:text="@string/login_twitter" />
+        android:background="@drawable/twitterlogin" />
 
-    <!--  
-    <Button
-        android:id="@+id/facebook"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/login_facebook" />
-    -->
+
     <com.facebook.widget.LoginButton
             android:id="@+id/facebook"
             android:layout_width="200dp"
