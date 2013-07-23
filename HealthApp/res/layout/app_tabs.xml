@@ -3,13 +3,14 @@
     android:id="@android:id/tabhost"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
-    <LinearLayout
+    <RelativeLayout
 		android:orientation="vertical"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent">
 
         <TabWidget
             android:id="@android:id/tabs"
+            android:layout_alignParentBottom"="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
 
@@ -18,11 +19,14 @@
 		<FrameLayout android:id="@android:id/tabcontent"
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
+			android:padding="5dp"
 		>
-			<ListView android:id="@+id/profile"
+			<RelativeLayout android:id="@+id/profile"
 				android:layout_width="fill_parent"
 				android:layout_height="fill_parent"
-			/>
+			>
+
+			</RelativeLayout>
 			<TableLayout android:id="@+id/camera"
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
@@ -37,5 +41,5 @@
 			    
 			</RelativeLayout>
 		</FrameLayout>
-	</LinearLayout>
+	</RelativeLayout>
 </TabHost>
