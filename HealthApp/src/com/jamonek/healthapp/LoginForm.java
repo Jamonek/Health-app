@@ -21,6 +21,7 @@ public class LoginForm extends FragmentActivity {
 	}
 		
 		private View.OnClickListener onLogin=new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				EditText name=(EditText)findViewById(R.id.name);
 				EditText username=(EditText)findViewById(R.id.username);

@@ -1,6 +1,7 @@
 package com.jamonek.healthapp;
 
 import android.app.ActionBar;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,10 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.UiLifecycleHelper;
+
 public class MainActivity extends FragmentActivity implements
 		ActionBar.OnNavigationListener {
 	PersonLogin person = new PersonLogin();
@@ -47,6 +52,7 @@ public class MainActivity extends FragmentActivity implements
 		button3.setOnClickListener(onAccount);
 	}
 	private View.OnClickListener onTwitter=new View.OnClickListener() {
+		@Override
 		public void onClick(View v) {
 			person.setType("Twitter");
 			Intent i = new Intent(MainActivity.this, LoginForm.class);
@@ -55,6 +61,7 @@ public class MainActivity extends FragmentActivity implements
 		}
 	};
 	private View.OnClickListener onFacebook=new View.OnClickListener() {
+		@Override
 		public void onClick(View v) {
 			person.setType("Facebook");
 			Intent i = new Intent(MainActivity.this, LoginForm.class);
@@ -63,6 +70,7 @@ public class MainActivity extends FragmentActivity implements
 		}
 	};
 	private View.OnClickListener onAccount=new View.OnClickListener() {
+		@Override
 		public void onClick(View v) {
 			person.setType("Account");
 			Intent i = new Intent(MainActivity.this, LoginForm.class);
