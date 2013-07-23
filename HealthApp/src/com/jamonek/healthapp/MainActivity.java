@@ -15,6 +15,8 @@ import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
 
+// Quick edit
+
 public class MainActivity extends FragmentActivity implements
 		ActionBar.OnNavigationListener {
 	PersonLogin person = new PersonLogin();
