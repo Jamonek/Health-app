@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class ProfileActivity extends Fragment {
     /** (non-Javadoc)
@@ -24,6 +25,6 @@ public class ProfileActivity extends Fragment {
             // the view hierarchy; it would just never be used.
             return null;
         }
-        return (LinearLayout)inflater.inflate(R.layout.profile_layout, container, false);
+        return (RelativeLayout)inflater.inflate(R.layout.profile_layout, container, false);
     }
 }
