@@ -25,7 +25,9 @@
         <activity
             android:name=".LoginFormActivity">
         </activity>
-
+		<activity
+            android:name=".AndroidTabActivity">
+        </activity>
         <activity
             android:name=".ProfileActivity">
         </activity>
