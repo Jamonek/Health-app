@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginForm">
+            android:name=".LoginFormActivity">
         </activity>
         <activity
             android:name=".AndroidTabActivity">

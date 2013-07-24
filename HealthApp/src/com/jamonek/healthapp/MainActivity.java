@@ -57,7 +57,7 @@ public class MainActivity extends FragmentActivity implements
 		@Override
 		public void onClick(View v) {
 			person.setType("Twitter");
-			Intent i = new Intent(MainActivity.this, LoginForm.class);
+			Intent i = new Intent(MainActivity.this, LoginFormActivity.class);
 			i.putExtra(TYPE_EXTRA, person.getType());
 			startActivity(i);	
 		}
@@ -66,7 +66,7 @@ public class MainActivity extends FragmentActivity implements
 		@Override
 		public void onClick(View v) {
 			person.setType("Facebook");
-			Intent i = new Intent(MainActivity.this, LoginForm.class);
+			Intent i = new Intent(MainActivity.this, LoginFormActivity.class);
 			i.putExtra(TYPE_EXTRA, person.getType());
 			startActivity(i);
 		}
@@ -75,7 +75,7 @@ public class MainActivity extends FragmentActivity implements
 		@Override
 		public void onClick(View v) {
 			person.setType("Account");
-			Intent i = new Intent(MainActivity.this, LoginForm.class);
+			Intent i = new Intent(MainActivity.this, LoginFormActivity.class);
 			i.putExtra(TYPE_EXTRA, person.getType());
 			startActivity(i);
 		}

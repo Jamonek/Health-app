@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LoginForm extends FragmentActivity {
+public class LoginFormActivity extends FragmentActivity {
 	public final static String TYPE = "";
 	public final static String NAME = "";
 	public final static String USERNAME = "";
@@ -31,7 +31,7 @@ public class LoginForm extends FragmentActivity {
 				person.setName(name.getText().toString());
 				person.setUsername(username.getText().toString());
 				person.setPassword(password.getText().toString());
-				Intent i = new Intent(LoginForm.this, AndroidTabActivity.class);
+				Intent i = new Intent(LoginFormActivity.this, AndroidTabActivity.class);
 				i.putExtra(TYPE, person.getType());
 				i.putExtra(NAME, person.getName());
 				i.putExtra(USERNAME, person.getUsername());
