@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LoginForm">
+        </activity>
+        <activity
             android:name=".AndroidTabActivity">
         </activity>
         <activity

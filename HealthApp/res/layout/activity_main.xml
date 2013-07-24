@@ -7,7 +7,7 @@
     tools:ignore="MergeRootFrame" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/profile_name"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:gravity="center"
@@ -15,20 +15,19 @@
 
     <Button
         android:id="@+id/twitter"
-        android:layout_width="200dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
         android:background="@drawable/twitterlogin" />
 
-
     <com.facebook.widget.LoginButton
-            android:id="@+id/facebook"
-            android:layout_width="200dp"
-        	android:layout_height="wrap_content"
-        	android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+        android:id="@+id/facebook"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp" />
 
     <Button
         android:id="@+id/account"

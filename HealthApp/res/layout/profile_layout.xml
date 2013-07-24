@@ -1,8 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:layout_height="match_parent">
 
-</LinearLayout>
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/quickContactBadge1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/quickContactBadge1"
+        android:text="@string/profile_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/profile_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickContactBadge1"
+        android:layout_alignLeft="@+id/profile_name"
+        android:text="@string/profile_extra"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/profile_current_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_extra"
+        android:layout_alignLeft="@+id/profile_extra"
+        android:text="@string/current_health"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/profile_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/profile_stats"
+        android:layout_alignBottom="@+id/profile_stats"
+        android:layout_toRightOf="@+id/profile_stats"
+        android:text="Button"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/profile_stats"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/profile_extra"
+        android:layout_below="@+id/quickContactBadge1"
+        android:layout_marginTop="15dp"
+        android:text="@string/profile_stats"
+        android:textSize="12sp" />
+
+</RelativeLayout>

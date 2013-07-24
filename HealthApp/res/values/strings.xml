@@ -14,4 +14,8 @@
 	<string name="password">Password</string>
 	<string name="username">Username</string>
 	<string name="login">Login</string>
+	<string name="profile_name">Person Name</string>
+	<string name="current_health">Current Health Conditions</string>
+	<string name="profile_extra">Extra Text</string>
+	<string name="profile_stats">Health Stats</string>
 </resources>

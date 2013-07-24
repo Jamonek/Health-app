@@ -217,7 +217,7 @@ containing a value of this type.
     public static final class id {
         public static final int RelativeLayout1=0x7f04001e;
         public static final int account=0x7f040007;
-        public static final int action_settings=0x7f040025;
+        public static final int action_settings=0x7f040028;
         public static final int com_facebook_login_activity_progress_bar=0x7f04000a;
         public static final int com_facebook_picker_activity_circle=0x7f040009;
         public static final int com_facebook_picker_checkbox=0x7f04000c;
@@ -245,13 +245,16 @@ containing a value of this type.
         public static final int normal=0x7f040001;
         public static final int password=0x7f040020;
         public static final int picker_subtitle=0x7f040019;
+        public static final int profile_button=0x7f040026;
+        public static final int profile_current_health=0x7f040022;
+        public static final int profile_extra=0x7f040021;
+        public static final int profile_name=0x7f040004;
+        public static final int profile_stats=0x7f040027;
+        public static final int quickContactBadge1=0x7f040025;
         public static final int realtabcontent=0x01010000;
         public static final int search_box=0x7f040018;
         public static final int section_label=0x7f04001d;
         public static final int small=0x7f040000;
-        public static final int textView1=0x7f040004;
-        public static final int textView2=0x7f040021;
-        public static final int textView3=0x7f040022;
         public static final int twitter=0x7f040005;
         public static final int username=0x7f040023;
     }
@@ -309,11 +312,15 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
         public static final int create_account=0x7f050021;
+        public static final int current_health=0x7f050027;
         public static final int login=0x7f050025;
         public static final int login_facebook=0x7f050020;
         public static final int login_twitter=0x7f05001f;
         public static final int name=0x7f050022;
         public static final int password=0x7f050023;
+        public static final int profile_extra=0x7f050028;
+        public static final int profile_name=0x7f050026;
+        public static final int profile_stats=0x7f050029;
         public static final int title_section1=0x7f05001b;
         public static final int title_section2=0x7f05001c;
         public static final int title_section3=0x7f05001d;
