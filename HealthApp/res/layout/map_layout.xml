@@ -4,6 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <ListView
+        android:id="@+id/items"
+        android:layout_width="242dp"
+        android:layout_height="1148dp" />
     
     <fragment
         android:id="@+id/map"
